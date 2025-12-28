@@ -1,0 +1,5 @@
+{
+  "name": "RentFlow Mobile",
+  "description": "A mobile-first rental management system tailored for landlords to track properties, tenants, and finances with AI-powered assistance.",
+  "requestFramePermissions": []
+}
