@@ -230,7 +230,7 @@ export const TenantsView: React.FC<TenantsViewProps> = ({
       </div>
 
       {/* Tenants List Grid */}
-      <div className="flex-1 overflow-y-auto no-scrollbar px-6 py-6 pb-32 space-y-5">
+      <div className="flex-1 overflow-y-auto no-scrollbar px-6 py-6 pb-32 space-y-5 overscroll-y-contain">
         {filteredTenants.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-64 text-center">
                 <div className="h-20 w-20 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mb-4 text-slate-300 dark:text-slate-600">
@@ -375,7 +375,7 @@ export const TenantsView: React.FC<TenantsViewProps> = ({
                 </div>
 
                 {/* Content Area - Avatar Moved Here */}
-                <div className="pt-20 px-8 pb-8 flex-1 overflow-y-auto">
+                <div className="pt-20 px-8 pb-8 flex-1 overflow-y-auto overscroll-y-contain">
                     
                     {/* Avatar Section (Moved from top background) */}
                     <div className="flex justify-center mb-6">
@@ -644,7 +644,7 @@ export const TenantsView: React.FC<TenantsViewProps> = ({
       {isAddModalOpen && (
         <div className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center pointer-events-none">
             <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm pointer-events-auto transition-opacity" onClick={onCloseAddModal} />
-            <div className="bg-white dark:bg-slate-950 w-full max-w-lg rounded-t-[32px] sm:rounded-3xl p-8 pointer-events-auto transform transition-transform duration-300 animate-slide-up shadow-2xl max-h-[90vh] overflow-y-auto border-t border-white/10 dark:border-slate-800">
+            <div className="bg-white dark:bg-slate-950 w-full max-w-lg rounded-t-[32px] sm:rounded-3xl p-8 pointer-events-auto transform transition-transform duration-300 animate-slide-up shadow-2xl max-h-[90vh] overflow-y-auto border-t border-white/10 dark:border-slate-800 overscroll-y-contain">
                 <div className="w-16 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full mx-auto mb-8"></div>
                 
                 <div className="text-center mb-8">

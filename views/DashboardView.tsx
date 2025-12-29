@@ -95,7 +95,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({ tenants, isDarkMod
   };
 
   return (
-    <div className="p-6 space-y-6 pb-32 animate-fade-in bg-slate-50/50 dark:bg-slate-950 h-full overflow-y-auto no-scrollbar transition-colors">
+    <div className="p-6 space-y-6 pb-32 animate-fade-in bg-slate-50/50 dark:bg-slate-950 h-full overflow-y-auto no-scrollbar transition-colors overscroll-y-contain">
       
       {/* Header with Profile & Date Filter */}
       <header className="flex justify-between items-start mb-2">
